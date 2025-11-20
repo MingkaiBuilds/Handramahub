@@ -5,14 +5,15 @@ class GenderChoices(models.TextChoices):
     FEMALE = "F", "Female"
 
 class Actor(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255, unique=True, db_index=True)
     gender = models.CharField(
         max_length=1,
         choices=GenderChoices.choices,
         null=True,
         blank=True,
+        db_index=True
     )
-    birth_year = models.IntegerField(null=True, blank=True)
+    birth_year = models.IntegerField(null=True, blank=True, db_index=True)
     nationality = models.CharField(max_length=255, null=True, blank=True)
     bio = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)

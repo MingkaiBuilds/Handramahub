@@ -1,10 +1,10 @@
 from django.db import models
 
 class Drama(models.Model):
-    title = models.CharField(max_length=255, unique=True)
-    year = models.IntegerField(null=True, blank=True)
+    title = models.CharField(max_length=255, unique=True, db_index=True)
+    year = models.IntegerField(null=True, blank=True, db_index=True)
     description = models.TextField(null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
