@@ -1,0 +1,104 @@
+[
+  {
+    "model": "dramas.drama",
+    "pk": 1,
+    "fields": {
+      "title": "Crash Landing on You",
+      "year": 2019,
+      "description": "A South Korean heiress crash lands in North Korea and meets a soldier.",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "dramas.drama",
+    "pk": 2,
+    "fields": {
+      "title": "The Untamed",
+      "year": 2019,
+      "description": "Two soulmates unravel a conspiracy in the cultivation world.",
+      "created_at": "2024-01-02T00:00:00Z",
+      "updated_at": "2024-01-02T00:00:00Z"
+    }
+  },
+
+  {
+    "model": "dramas.actor",
+    "pk": 1,
+    "fields": {
+      "name": "Hyun Bin",
+      "gender": "M",
+      "birth_year": 1982,
+      "nationality": "South Korean",
+      "bio": "",
+      "created_at": "2024-01-03T00:00:00Z",
+      "updated_at": "2024-01-03T00:00:00Z"
+    }
+  },
+  {
+    "model": "dramas.actor",
+    "pk": 2,
+    "fields": {
+      "name": "Son Ye-jin",
+      "gender": "F",
+      "birth_year": 1982,
+      "nationality": "South Korean",
+      "bio": "",
+      "created_at": "2024-01-04T00:00:00Z",
+      "updated_at": "2024-01-04T00:00:00Z"
+    }
+  },
+  {
+    "model": "dramas.actor",
+    "pk": 3,
+    "fields": {
+      "name": "Xiao Zhan",
+      "gender": "M",
+      "birth_year": 1991,
+      "nationality": "Chinese",
+      "bio": "",
+      "created_at": "2024-01-05T00:00:00Z",
+      "updated_at": "2024-01-05T00:00:00Z"
+    }
+  },
+
+  {
+    "model": "dramas.dramaactor",
+    "pk": 1,
+    "fields": {
+      "drama": 1,
+      "actor": 1,
+      "character_name": "Ri Jeong-hyeok",
+      "billing_order": 1,
+      "notes": "",
+      "created_at": "2024-01-06T00:00:00Z",
+      "updated_at": "2024-01-06T00:00:00Z"
+    }
+  },
+  {
+    "model": "dramas.dramaactor",
+    "pk": 2,
+    "fields": {
+      "drama": 1,
+      "actor": 2,
+      "character_name": "Yoon Se-ri",
+      "billing_order": 2,
+      "notes": "",
+      "created_at": "2024-01-06T00:00:00Z",
+      "updated_at": "2024-01-06T00:00:00Z"
+    }
+  },
+  {
+    "model": "dramas.dramaactor",
+    "pk": 3,
+    "fields": {
+      "drama": 2,
+      "actor": 3,
+      "character_name": "Wei Wuxian",
+      "billing_order": 1,
+      "notes": "",
+      "created_at": "2024-01-07T00:00:00Z",
+      "updated_at": "2024-01-07T00:00:00Z"
+    }
+  }
+]
