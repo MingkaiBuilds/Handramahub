@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'dramas',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
